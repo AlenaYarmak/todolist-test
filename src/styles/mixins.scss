@@ -1,0 +1,25 @@
+@use './variables.scss' as *;
+
+@mixin text {
+    color: $primary-text-color;
+    font-size: $font-size;
+    font-weight: 400;
+}
+
+@mixin secondary-text {
+    color: $secondary-text-color;
+    font-size: $font-size;
+    font-weight: 400;
+}
+
+@mixin light-text {
+    color: $light-text-color;
+    font-size: $font-size;
+    font-weight: 400;
+}
+
+@mixin sublight-text {
+    color: $slightlight-text-color;
+    font-size: $font-size;
+    font-weight: 400;
+}
