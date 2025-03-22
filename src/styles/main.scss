@@ -23,3 +23,52 @@
     max-width: 700px;
     width: 100%;
 }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    &__title {
+        font-size: 48px;
+        color: #FFF;
+        letter-spacing: 10px;
+    }
+}
+
+.toggle-icon {
+    width: 36px;
+    height: 36px;
+}
+
+/* task list */
+.task-list {
+    background-color: #FFF;
+    border-radius: $border-radius;
+    &__item {
+        @include text;
+        display: flex;
+        align-content: center;
+        gap: $spacing-s;
+        padding: $spacing-s $spacing-m;
+        border-bottom: 1px solid $slightlight-text-color;
+    }
+    &__item__description {
+
+    }
+}
+
+.checkbox {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid $slightlight-text-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-icon {
+
+    }
+    &--active {
+        background: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    }
+}
