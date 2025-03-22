@@ -72,3 +72,16 @@
         background: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
     }
 }
+
+/* media */
+@media (min-width: 577px) {
+    .wrapper {
+        background-image: url('../assets/bg-desktop-light.jpg');
+    }
+}
+
+@media (max-width: 576px) {
+    .wrapper {
+        background-image: url('../assets/bg-mobile-light.jpg');
+    }
+}
