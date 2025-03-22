@@ -73,6 +73,15 @@
     }
 }
 
+/* filters */
+.filter {
+    &__container {
+        @include secondary-text;
+        display: flex;
+        gap: $spacing-s;
+    }
+}
+
 /* media */
 @media (min-width: 577px) {
     .wrapper {

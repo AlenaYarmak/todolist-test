@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import TaskItem from './TaskItem';
+import FilterBlock from './FilterBlock';
 import tasksData from './../data/tasksMockData.json';
 import { Task } from '../types/types';
 
@@ -39,6 +40,7 @@ const TaskList: React.FC<TaskListProps> = ({ tasks, setTasks, clearCompleted }) 
                 <div className='task-counter'>
                     {activeTaskCounter} items left
                 </div>
+                <FilterBlock filter={filter} setFilter={setFilter}/>
                 <div 
                     className='task-clear'
                     onClick={clearCompleted}>
