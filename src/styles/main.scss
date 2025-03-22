@@ -8,3 +8,18 @@
     box-sizing: border-box;
     font-family: $font-family-base;
 }
+
+/* main */
+.wrapper {
+    background-color: $background-color;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container {
+    padding: 96px 0px;
+    margin: 0 auto;
+    max-width: 700px;
+    width: 100%;
+}
