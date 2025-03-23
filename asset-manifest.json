@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/todolist-test/static/css/main.0f0c9ce1.css",
+    "main.js": "/todolist-test/static/js/main.70c3a02a.js",
+    "static/media/bg-desktop-light.jpg": "/todolist-test/static/media/bg-desktop-light.3508d620efd5a52bb4ce.jpg",
+    "index.html": "/todolist-test/index.html",
+    "static/media/icon-moon.svg": "/todolist-test/static/media/icon-moon.6c03114b495d05f4380b3c544d9afe2a.svg",
+    "static/media/icon-cross.svg": "/todolist-test/static/media/icon-cross.6ee81d30b75cab19d6f7314624fcc4d6.svg",
+    "static/media/icon-check.svg": "/todolist-test/static/media/icon-check.a8fb15d0278c8e312df5fc8364fef863.svg",
+    "main.0f0c9ce1.css.map": "/todolist-test/static/css/main.0f0c9ce1.css.map",
+    "main.70c3a02a.js.map": "/todolist-test/static/js/main.70c3a02a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f0c9ce1.css",
+    "static/js/main.70c3a02a.js"
+  ]
+}
