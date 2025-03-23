@@ -69,6 +69,7 @@
     &__item__description {
         margin-left: 10px;
         flex-grow: 1;
+        cursor: pointer;
     }
 }
 
@@ -81,6 +82,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     &-icon {
 
     }
@@ -90,7 +92,8 @@
 }
 
 .remove-button {
-    justify-content: end
+    justify-content: end;
+    cursor: pointer;
 }
 
 .task-container {
@@ -100,6 +103,10 @@
     padding: $spacing-s $spacing-m;
 }
 
+.task-clear {
+    cursor: pointer;
+}
+
 
 /* filters */
 .filter {
@@ -107,6 +114,9 @@
         @include secondary-text;
         display: flex;
         gap: $spacing-s;
+    }
+    &__item {
+        cursor: pointer;
     }
     &--active {
         color: $active-color;
