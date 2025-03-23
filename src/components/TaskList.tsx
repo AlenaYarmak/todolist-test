@@ -1,7 +1,6 @@
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import TaskItem from './TaskItem';
 import FilterBlock from './FilterBlock';
-import tasksData from './../data/tasksMockData.json';
 import { Task } from '../types/types';
 
 interface TaskListProps {
@@ -36,6 +35,7 @@ const TaskList: React.FC<TaskListProps> = ({ tasks, setTasks, clearCompleted }) 
 
     const handleDragStart = (e: React.DragEvent, task: Task) => {
         setDraggedTaskId(task.id);
+
         e.dataTransfer.setData('text/plain', task.id.toString());
     };
 

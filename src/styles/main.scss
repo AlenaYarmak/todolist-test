@@ -124,6 +124,11 @@
     }
 }
 
+.text--completed {
+    text-decoration: line-through;
+    color: $light-text-color;
+}
+
 /* media */
 @media (max-width: 768px) {
     .container {

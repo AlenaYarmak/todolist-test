@@ -47,7 +47,7 @@ const TaskItem: React.FC<TaskItemProps> =({
             <Checkbox
                 checked={isCompleted}
                 onClick={() => onToggle(task.id)} />
-            <div className='task-list__item__description'>
+            <div className={`task-list__item__description ${isCompleted ? 'text--completed' : ''}`}>
                 {task.description}
             </div>
             <RemoveButton onClick={() => onRemove(task.id)}/>
