@@ -57,6 +57,7 @@
 .task-list {
     background-color: #FFF;
     border-radius: $border-radius;
+    position: relative;
     &__item {
         @include text;
         display: flex;
@@ -124,14 +125,45 @@
 }
 
 /* media */
-@media (min-width: 577px) {
-    .wrapper {
-        background-image: url('../assets/bg-desktop-light.jpg');
+@media (max-width: 768px) {
+    .container {
+        max-width: 500px;
+        padding: 46px 0px;
+    }
+
+    .filter {
+        &__container {
+            position: absolute;
+            bottom: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #FFF;
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            padding: $spacing-s $spacing-m;
+            border-radius: $border-radius;
+        }
     }
 }
 
 @media (max-width: 576px) {
     .wrapper {
         background-image: url('../assets/bg-mobile-light.jpg');
+    }
+    .container {
+        max-width: calc(100% - 2 * $spacing-m);
+        padding: 36px 0px;
+    }
+    .header {
+        &__title {
+            font-size: 28px;
+        }
+    }
+}
+
+@media (min-width: 577px) {
+    .wrapper {
+        background-image: url('../assets/bg-desktop-light.jpg');
     }
 }
