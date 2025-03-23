@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 interface AddTaskProps {
     onAddTask: (description: string) => void;
 }
 
 const AddTask: React.FC<AddTaskProps> = ({ onAddTask }) => {
+    const inputRef = useRef<HTMLInputElement>(null);
     const [newTaskName, setNewTaskName] = useState('');
 
     const handleKeyPress = (e: React.KeyboardEvent) => {
@@ -14,9 +15,12 @@ const AddTask: React.FC<AddTaskProps> = ({ onAddTask }) => {
         }
     };
     return (
-        <div className='task-add'>
+        <div  
+            className='task-add'
+            onClick={() => inputRef.current?.focus()}>
             <div className='checkbox'></div>
-            <input 
+            <input
+                ref={inputRef}
                 className='task-add__input' 
                 type='text'
                 placeholder='Create a new todo...'

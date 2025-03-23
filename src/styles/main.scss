@@ -9,6 +9,10 @@
     font-family: $font-family-base;
 }
 
+input:focus {
+    outline: none;
+}
+
 /* main */
 .wrapper {
     background-color: $background-color;
