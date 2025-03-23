@@ -25,7 +25,11 @@ const TaskList: React.FC<TaskListProps> = ({ tasks, setTasks, clearCompleted }) 
             ? {...task, status: task.status === 'active' ? 'completed' : 'active'} 
             : task
         ));
-      };
+    };
+
+    const removeTask = (id: string | number) => {
+        setTasks(tasks.filter(task => task.id !== id))
+    }
 
     return (
         <div className='task-list'>
@@ -34,6 +38,7 @@ const TaskList: React.FC<TaskListProps> = ({ tasks, setTasks, clearCompleted }) 
                     task={task}
                     key={task.id}
                     onToggle={toggleTaskStatus}
+                    onRemove={removeTask}
                 />
             ))}
             <div className='task-container'>

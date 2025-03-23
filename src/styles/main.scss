@@ -39,6 +39,20 @@
     height: 36px;
 }
 
+/* task add */
+.task-add {
+    display: flex;
+    gap: $spacing-s;
+    background-color: #FFF;
+    border-radius: $border-radius;
+    padding: $spacing-s $spacing-m;
+    margin: $spacing-m 0px;
+    &__input {
+        @include secondary-text;
+        border: none;
+    }
+}
+
 /* task list */
 .task-list {
     background-color: #FFF;
@@ -72,6 +86,14 @@
         background: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
     }
 }
+
+.task-container {
+    @include light-text;
+    display: flex;
+    justify-content: space-between;
+    padding: $spacing-s $spacing-m;
+}
+
 
 /* filters */
 .filter {
