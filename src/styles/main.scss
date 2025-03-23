@@ -60,13 +60,15 @@
     &__item {
         @include text;
         display: flex;
-        align-content: center;
+        align-items: center;
+        justify-content: space-between;
         gap: $spacing-s;
         padding: $spacing-s $spacing-m;
         border-bottom: 1px solid $slightlight-text-color;
     }
     &__item__description {
-
+        margin-left: 10px;
+        flex-grow: 1;
     }
 }
 
@@ -85,6 +87,10 @@
     &--active {
         background: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
     }
+}
+
+.remove-button {
+    justify-content: end
 }
 
 .task-container {

@@ -6,7 +6,9 @@ interface RemoveButtonProps {
 
 const RemoveButton: React.FC<RemoveButtonProps> = ({ onClick }) => {
     return (
-        <div onClick={onClick}>
+        <div 
+            className='remove-button'
+            onClick={onClick}>
             <img src={closeIcon} alt='close task button' />
         </div>
     )
