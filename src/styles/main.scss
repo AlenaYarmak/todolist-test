@@ -108,6 +108,9 @@
         display: flex;
         gap: $spacing-s;
     }
+    &--active {
+        color: $active-color;
+    }
 }
 
 /* media */

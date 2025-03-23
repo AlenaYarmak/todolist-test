@@ -11,19 +11,19 @@ const FilterBlock: React.FC<FilterBlockProps> = ({ filter, setFilter }) => {
     return (
         <div className='filter__container'>
             <div 
-                className={`filter__item ${filter === 'all' ? 'active' : ''}`}
+                className={`filter__item ${filter === 'all' ? 'filter--active' : ''}`}
                 onClick={() => setFilter('all')}
             >
                 All
             </div>
             <div 
-                className={`filter__item ${filter === 'active' ? 'active' : ''}`}
+                className={`filter__item ${filter === 'active' ? 'filter--active' : ''}`}
                 onClick={() => setFilter('active')}
             >
                 Active
             </div>
             <div 
-                className={`filter__item ${filter === 'completed' ? 'active' : ''}`}
+                className={`filter__item ${filter === 'completed' ? 'filter--active' : ''}`}
                 onClick={() => setFilter('completed')}
             >
                 Completed
